@@ -1,0 +1,2 @@
+#!/bin/bach
+awk 'NR==3 {print}' iacta
