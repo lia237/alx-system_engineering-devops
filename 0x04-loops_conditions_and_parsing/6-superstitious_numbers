@@ -1,0 +1,22 @@
+#!/usr/bin/env bash
+# This script is displaying numbers and text in a loop based on conditions
+
+ITERATION=1
+while [ $ITERATION -lt 21 ]
+do
+	case $ITERATION in
+		4 )
+			echo $ITERATION
+			echo "bad luck from China" ;;
+		9 )
+			echo $ITERATION
+			echo "bad luck from Japan" ;;
+		17 )
+			echo $ITERATION
+			echo "bad luck from Italy" ;;
+		* )
+			echo $ITERATION ;;
+	esac
+	ITERATION=$(( ITERATION + 1 ))
+done
+
